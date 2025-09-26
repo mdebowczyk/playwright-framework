@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Test results and artifacts
+test-results/
+
+# Logs
+npm-debug.log*
+
+# OS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env
+.github
+
+# Coverage
+coverage/
+
+
+# Reports
+*.html
+*.webm
+
+# Misc
+*.log

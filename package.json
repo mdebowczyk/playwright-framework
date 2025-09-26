@@ -1,0 +1,20 @@
+{
+  "name": "new_play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "cucumber": "cucumber-js tests/features/homepage.feature --require tests/steps/homepage.steps.js --format json:test-results/cucumber_report.json; node tests/generate-html-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.1",
+    "cucumber-html-reporter": "^6.0.0",
+    "playwright": "^1.55.1"
+  }
+}
