@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cucumber": "cucumber-js tests/features/homepage.feature --require tests/steps/homepage.steps.js --format json:test-results/cucumber_report.json; node tests/generate-html-report.js"
+  "cucumber": "cucumber-js tests/features/*.feature --require-module ts-node/register --require tests/steps/*.ts --format json:test-results/cucumber_report.json; ts-node tests/generate-html-report.ts"
   },
   "keywords": [],
   "author": "",
