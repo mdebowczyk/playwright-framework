@@ -13,7 +13,7 @@ This project is set up for running Playwright tests.
    npx playwright test
    ```
 
-3. Run Cucumber BDD tests:
+3. Run Cucumber BDD tests (TypeScript):
    ```sh
    npm run cucumber
    ```
@@ -21,15 +21,17 @@ This project is set up for running Playwright tests.
 
 ## Project Structure
 - `tests/features/` - Cucumber feature files (Gherkin syntax)
-- `tests/steps/` - Step definitions for Cucumber (integrated with Playwright)
-- `tests/` - Playwright test files (e.g., example.spec.js)
+- `tests/steps/` - Step definitions for Cucumber in TypeScript (integrated with Playwright)
+- `tests/generate-html-report.ts` - Generates HTML report from Cucumber JSON output
+- `tests/` - Playwright test files (if any)
 - `test-results/` - Test artifacts (screenshots, videos, HTML report)
 - `package.json` - Project configuration and scripts
+- `tsconfig.json` - TypeScript configuration
 
 ## Example Tests
-- See `tests/example.spec.js` for a basic Playwright test.
-- See `tests/features/playwright-homepage.feature` and `tests/steps/playwright-homepage.steps.js` for a Cucumber BDD test.
+- See `tests/features/homepage.feature` and `tests/steps/homepage.steps.ts` for a Cucumber BDD test in TypeScript.
 
 ## Documentation
 - [Playwright documentation](https://playwright.dev/)
 - [Cucumber.js documentation](https://github.com/cucumber/cucumber-js)
+- [TypeScript documentation](https://www.typescriptlang.org/)
